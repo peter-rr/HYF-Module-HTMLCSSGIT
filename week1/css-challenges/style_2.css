@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+body {
+  background-color: burlywood;
+  margin-top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  padding: 25px 0px;
+  font-size: 36px;
+  width: 50%;
+  margin: 0 25%;
+}
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  width: 64%;
+  margin: 0 25%;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+ul {
+  padding: 0px 55px;
+  text-align: center;
+  margin: 0 35%;
+  display: inline-table;
+  list-style: none;
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  width: 40%;
+}
+ul b {
+  font-size: xx-large;
+  font-weight: normal;
+}
+li {
+  padding-bottom: 3px;
+}
+.copyright {
+  padding-top: 20px;
+}

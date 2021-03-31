@@ -1,0 +1,17 @@
+body{
+    background-color:white;
+    font-size: x-large;
+    font-family: "Verdana",sans-serif;
+    margin: 5%;
+  }
+  ul{
+    margin: 0 25%;
+    display: inline-table;
+  }
+  footer{
+    font-size: medium;
+    font-style: italic;
+  }
+  a:hover{
+    color: #cc0e74;
+  }

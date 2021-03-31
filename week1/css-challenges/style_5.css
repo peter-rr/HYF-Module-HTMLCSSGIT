@@ -1,0 +1,65 @@
+body {
+  font-family: Verdana, sans-serif, Arial, sans-serif;
+}
+#logo h1 {
+  /* Hiding content */
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+#header {
+  width: 1200px;
+  margin: 80px auto 0;
+}
+#logo {
+  float: left;
+  width: 330px;
+  margin-left: 20px;
+}
+blockquote {
+  float: right;
+  width: 850px;
+  margin: 0;
+  font-style: italic;
+  font-size: 35px;
+}
+#content {
+  clear: both;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#content-side {
+  float: left;
+  width: 350px;
+}
+#content-main {
+  float: right;
+  width: 800px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+#content-main h2 {
+  margin-bottom: 0;
+}
+#content-main p {
+  margin: 14px 0 14px;
+}
+#content-side dt {
+  font-size: 19px;
+}
+#content-side dd {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+small {
+  font-size: 14px;
+}
+a {
+  /* Styling links */
+  text-decoration: none;
+  color: rgb(174, 146, 85);
+}

@@ -1,0 +1,21 @@
+Question 1:
+// Create a hidden file
+$ touch .filename
+
+// Create a hidden folder
+$ mkdir .foldername
+
+// Display file/folder on CLI
+$ ls -a
+
+
+
+Question 2:
+// Create multiple nested directories
+$ mkdir -p c/Users/myusername/these/folders/are/just/for/fun
+
+
+
+Question 3:
+// Append a message to a file w/o newline character
+$ echo "third message" >> filename.txt

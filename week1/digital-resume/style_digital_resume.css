@@ -1,0 +1,43 @@
+body {
+  font-family: Tahoma, sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.925);
+}
+.container {
+  margin: 0 auto 60px;
+  max-width: 900px;
+}
+h1 {
+  font-size: 50px;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  padding-top: 10px;
+}
+.flexbox-container {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.personal-description {
+  padding-left: 20px;
+  font-style: italic;
+  color: rgba(222, 222, 222, 0.90);
+}
+.personal-description p {
+margin-top: 10px;
+}
+h2 {
+  border-bottom: 2px solid rgba(78, 235, 123, 0.9);
+  padding-bottom: 5px;
+  margin-top: 30px;
+  color: rgba(78, 235, 123, 0.9);
+}
+li {
+  padding-bottom: 5px;
+}
+
+

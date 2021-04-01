@@ -1,4 +1,4 @@
-Question 1:
+QUESTION 1:
 // Create a hidden file
 $ touch .filename
 
@@ -10,12 +10,12 @@ $ ls -a
 
 
 
-Question 2:
+QUESTION 2:
 // Create multiple nested directories
 $ mkdir -p c/Users/myusername/these/folders/are/just/for/fun
 
 
 
-Question 3:
+QUESTION 3:
 // Append a message to a file w/o newline character
 $ echo "third message" >> filename.txt

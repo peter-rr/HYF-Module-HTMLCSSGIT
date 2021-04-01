@@ -9,13 +9,11 @@ $ mkdir .foldername
 $ ls -a
 
 
-
 QUESTION 2:
 // Create multiple nested directories
 $ mkdir -p c/Users/myusername/these/folders/are/just/for/fun
 
 
-
 QUESTION 3:
 // Append a message to a file w/o newline character
-$ echo "third message" >> filename.txt
+$ echo "new message" >> filename.txt

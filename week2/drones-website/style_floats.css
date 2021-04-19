@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  margin: 20px;
+}
+section h2 {
+  margin: 20px;
+}
+.grid-floats {
+  margin: 20px;
+}
+li.grid-item {
+  margin-bottom: 20px;
+  border: 1px solid rgba(196, 196, 196, 0.975);
+}
+li img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+li p,
+li h3 {
+  padding: 10px;
+}
+li {
+  list-style: none;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .grid-floats {
+    overflow: hidden;
+  }
+  .grid-floats > li {
+    float: left;
+    width: 29%;
+    height: 450px;
+    margin-right: 20px;
+  }
+  .grid-floats li:first-child,
+  .grid-floats li:nth-child(2) {
+    width: 45%;
+  }
+  body {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid-floats {
+        overflow: hidden;
+      }
+      .grid-floats > li {
+        float: left;
+        width: 22%;
+        height: 650px;
+        margin-right: 20px;
+      }
+      .grid-floats li:first-child {
+        width: 46%;
+      }
+      body {
+        margin-left: 20px;
+      }
+}

@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: rgb(227, 227, 227);
+}
 header h1 {
   margin: 20px;
 }
@@ -14,12 +17,17 @@ section h2 {
 li.grid-item {
   margin-bottom: 20px;
   border: 1px solid rgba(196, 196, 196, 0.975);
+  background-color:white;
+  border-radius: 8px;
+  box-shadow: 10px, 10px, 10px, red;
+  opacity: 0.8;
+  transform-origin: center bottom;
+  transition: opacity 0.5s ease-in-out, transform .2s ease-in-out;
 }
 li.grid-item:hover {
   border: 4px solid black;
-  transition: box-shadow 2s;
-  box-shadow: 5px, 5px, 5px, black;
-  /*animation: item-selected 1s ease;*/
+  opacity: 1;
+  transform: scale (0.5, 0.5);
 }
 li img {
   max-width: 100%;

@@ -1,6 +1,14 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("./RobotoSlab-VariableFont_wght.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  background-color: rgb(218, 218, 218);
+  font-family: "Roboto Slab", serif;
 }
 header h1 {
   margin: 20px;
@@ -13,7 +21,17 @@ section h2 {
 }
 li.grid-item {
   margin-bottom: 20px;
-  border: 1px solid rgba(196, 196, 196, 0.975);
+  border: 1px solid rgb(145, 145, 145);
+  background-color: white;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.grid-floats > li.grid-item:hover {
+  border: 1px solid rgb(0, 0, 0);
+  opacity: 1;
+  transform: scale(0.99);
+  animation: flash 1.25s;
+  box-shadow: 5px 5px 20px grey;
 }
 li img {
   max-width: 100%;
@@ -24,8 +42,24 @@ li p,
 li h3 {
   padding: 10px;
 }
+li h3 {
+  font-weight: 500;
+}
+li p {
+  font-weight: 300;
+}
 li {
   list-style: none;
+}
+
+/* Flashing */
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -35,7 +69,7 @@ li {
   .grid-floats > li {
     float: left;
     width: 29%;
-    height: 450px;
+    height: 615px;
     margin-right: 20px;
   }
   .grid-floats li:first-child,
@@ -48,19 +82,19 @@ li {
 }
 
 @media screen and (min-width: 1024px) {
-    .grid-floats {
-        overflow: hidden;
-      }
-      .grid-floats > li {
-        float: left;
-        width: 22%;
-        height: 650px;
-        margin-right: 20px;
-      }
-      .grid-floats li:first-child {
-        width: 46%;
-      }
-      body {
-        margin-left: 20px;
-      }
+  .grid-floats {
+    overflow: hidden;
+  }
+  .grid-floats > li {
+    float: left;
+    width: 22%;
+    height: 650px;
+    margin-right: 20px;
+  }
+  .grid-floats li:first-child {
+    width: 46%;
+  }
+  body {
+    margin-left: 20px;
+  }
 }

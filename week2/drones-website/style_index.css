@@ -1,16 +1,146 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("./RobotoSlab-VariableFont_wght.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(218, 218, 218);
+  font-family: "Roboto Slab", serif;
+}
+header h1 {
+  margin: 20px;
+}
+section h2 {
+  margin: 20px;
+}
+.grid-floats {
+  margin: 20px;
+}
+.grid-flex {
+  margin: 20px;
+}
+li.grid-item {
+  margin-bottom: 20px;
+  border: 1px solid rgb(145, 145, 145);
+  background-color: white;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.grid-floats > li.grid-item:hover {
+  border: 1px solid rgb(0, 0, 0);
+  opacity: 1;
+  transform: scale(0.99);
+  animation: flash 1.25s;
+  box-shadow: 5px 5px 20px grey;
+}
+.grid-flex > li.grid-item:hover {
+  border: 4px solid rgb(60, 60, 60);
+  opacity: 1;
+  transform: scale(1.025);
+  animation: flash 0.75s;
+  box-shadow: 5px 5px 20px grey;
+}
+li img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+li p,
+li h3 {
+  padding: 10px;
+}
+li h3 {
+  font-weight: 500;
+}
+li p {
+  font-weight: 300;
+}
+li {
+  list-style: none;
+}
 
-
-
-
-
-@media screen and (max-width: 599px) {
-    
+/* Flashing */
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-    
+  .grid-floats {
+    overflow: hidden;
+  }
+  .grid-floats > li {
+    float: left;
+    width: 29%;
+    height: 615px;
+    margin-right: 20px;
+  }
+  .grid-floats li:first-child,
+  .grid-floats li:nth-child(2) {
+    width: 45%;
+  }
+  .grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid-flex > li {
+    flex: 1 1 23%;
+    margin-right: 20px;
+  }
+  .grid-flex li:first-child,
+  .grid-flex li:nth-child(2) {
+    flex: 1 1 40%;
+  }
+  body {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    
+  .grid-floats {
+    overflow: hidden;
+  }
+  .grid-floats > li {
+    float: left;
+    width: 22%;
+    height: 650px;
+    margin-right: 20px;
+  }
+  .grid-floats li:first-child {
+    width: 46%;
+  }
+  .grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid-flex > li {
+    flex: 1 1 20%;
+    margin-right: 20px;
+  }
+  .grid-flex li:first-child {
+    flex: 1 1 45%;
+  }
+  /* Appending a pseudo element to the <ul> and it will act as the last flex item, 
+  instead of adding an empty <li> element to the HTML */
+  .grid-flex::after {
+    content: "";
+    flex: 1 1 20%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .grid-flex li:nth-child(2) img,
+  .grid-flex li:nth-child(3) img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  body {
+    margin-left: 20px;
+  }
 }

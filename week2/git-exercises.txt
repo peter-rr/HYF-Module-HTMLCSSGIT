@@ -1,0 +1,5 @@
+-------------------------------------------------
+https://github.com/peter-rr/favorite-cmd-commands
+-------------------------------------------------
+
+Repo created by following all the instructions explained here: https://github.com/HackYourFuture/HTML-CSS/blob/master/Week2/MAKEME.md#exercise-1

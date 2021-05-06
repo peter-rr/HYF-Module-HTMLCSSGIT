@@ -18,15 +18,36 @@ body {
   padding-right: 18px;
 }
 .nav-wrapper > ul li > .dropdown-trigger {
-    color: #141518;
-    padding-left: 6px;
-    padding-right: 18px;
-  }
-  .dropdown-content {
-    color: #141518;
-  }
+  color: #141518;
+  padding-left: 6px;
+  padding-right: 18px;
+}
+ul .dropdown-content > li a {
+  color: #141518;
+}
+/* .nav-wrapper input {
+  position: relative;
+  width: 237px;
+  height: 20.45px;
+  padding: 8px 12px;
+} */
+.nav-wrapper form .input-field {
+  background-color: rgb(245, 244, 242);
+  border-radius: 40px;
+}
+.nav-wrapper .btn-large {
+  text-transform: none;
+  border-radius: 30px;
+  background-color: #ff424d;
+  border: 2px solid transparent;
+  box-shadow: none;
+}
+.nav-wrapper .btn-large:hover {
+  color: #ff424d;
+  border-color: #ff424d;
+  background-color: #fff;
+}
 
-  
 /* @font-face {
   font-family: aktiv-grotesk;
   src: url("https://c5.patreon.com/external/fonts/aktiv-grotesk/aktiv-grotesk-upright-variable-weight.woff2")

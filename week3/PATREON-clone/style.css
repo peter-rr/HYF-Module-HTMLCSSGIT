@@ -1,3 +1,45 @@
 body {
-    background-color: #FF424D;
+  background-color: #141518;
 }
+
+.nav-wrapper > .brand-logo {
+  color: #141518;
+  /* padding-left: 10px; */
+}
+.nav-wrapper .brand-logo > img {
+  height: 24px;
+  width: 24px;
+}
+
+.nav-wrapper > ul li {
+  color: #141518;
+  padding-left: 6px;
+  padding-right: 18px;
+}
+/* @font-face {
+  font-family: aktiv-grotesk;
+  src: url("https://c5.patreon.com/external/fonts/aktiv-grotesk/aktiv-grotesk-upright-variable-weight.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: aktiv-grotesk;
+  src: url("https://c5.patreon.com/external/fonts/aktiv-grotesk/aktiv-grotesk-italics-variable-weight.woff2")
+    format("woff2");
+  font-style: oblique;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: Walsheim;
+  src: local("GT Walsheim"),
+    url("https://c5.patreon.com/external/fonts/gt-walsheim/GT-Walsheim-Bold.woff2")
+      format("woff2"),
+    url("https://c5.patreon.com/external/fonts/gt-walsheim/GT-Walsheim-Bold.woff")
+      format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+} */

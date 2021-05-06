@@ -21,32 +21,56 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>PATREON-clone</title>
   </head>
   <body>
     <!-- Navigation Bar -->
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper white">
+        <a href="#!" class="brand-logo"
+          ><img src="assets/patreon_logo_FieryCoral.svg" alt="logo" />
+        </a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+          <i class="material-icons grey-text text-darken-2">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#"></a>Product</li>
+          <li><a href="#"></a>For creators</li>
+          <li><a href="#"></a>Pricing</li>
+          <li><a href="#"></a>Resources</li>
+          <li><a href="#"></a>Starter Kits</li>
+        </ul>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#">Product</a></li>
+      <li><a href="#">For creators</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Starter Kits</a></li>
+    </ul>
 
 
-    
     <!-- Landing section -->
-    
 
-    
     <!-- Search -->
 
-
-    
     <!-- "What's Patreon?" section -->
 
-
-    
     <!-- Footer -->
-    
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
+      // Sidenav
+      const sideNav = document.querySelector('.sidenav');
+      M.Sidenav.init(sideNav, {
+        edge: 'right',
+        draggable: true,
+        preventScrolling: true
+      });
+
       // Tooltips
       const tt = document.querySelectorAll(".tooltipped");
       M.Tooltip.init(tt, {});

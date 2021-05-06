@@ -1,5 +1,6 @@
 body {
   background-color: #141518;
+  color: #141518;
 }
 
 .nav-wrapper > .brand-logo {
@@ -13,9 +14,19 @@ body {
 
 .nav-wrapper > ul li {
   color: #141518;
-  padding-left: 6px;
+  /* padding-left: 6px; */
   padding-right: 18px;
 }
+.nav-wrapper > ul li > .dropdown-trigger {
+    color: #141518;
+    padding-left: 6px;
+    padding-right: 18px;
+  }
+  .dropdown-content {
+    color: #141518;
+  }
+
+  
 /* @font-face {
   font-family: aktiv-grotesk;
   src: url("https://c5.patreon.com/external/fonts/aktiv-grotesk/aktiv-grotesk-upright-variable-weight.woff2")

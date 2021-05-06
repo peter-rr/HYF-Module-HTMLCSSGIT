@@ -32,25 +32,112 @@
           ><img src="assets/patreon_logo_FieryCoral.svg" alt="logo" />
         </a>
         <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-          <i class="material-icons grey-text text-darken-2">menu</i>
+          <i class="material-icons grey-text text-darken-2 right">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#"></a>Product</li>
-          <li><a href="#"></a>For creators</li>
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+              >Product<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+          <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">Lite</a></li>
+            <li><a href="#!">Pro</a></li>
+            <li><a href="#!">Premium</a></li>
+          </ul>
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown2"
+              >For creators<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+          <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#!">Podcasters</a></li>
+            <li><a href="#!">Video Creators</a></li>
+            <li><a href="#!">Musicians</a></li>
+            <li><a href="#!">Visual Artists</a></li>
+            <li><a href="#!">Communities</a></li>
+          </ul>
           <li><a href="#"></a>Pricing</li>
-          <li><a href="#"></a>Resources</li>
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown3"
+              >Resources<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+          <ul id="dropdown3" class="dropdown-content">
+            <li><a href="#!">Blog</a></li>
+            <li><a href="#!">Creator Community</a></li>
+            <li><a href="#!">Events</a></li>
+            <li><a href="#!">Patreon U</a></li>
+            <li><a href="#!">App Directory</a></li>
+            <li><a href="#!">Help Center & FAQ</a></li>
+          </ul>
           <li><a href="#"></a>Starter Kits</li>
         </ul>
       </nav>
     </div>
     <ul class="sidenav" id="mobile-nav">
-      <li><a href="#">Product</a></li>
-      <li><a href="#">For creators</a></li>
+      <li><a class="sidenav-close" href="#!">X</a></li>
+      <li class="divider"></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-expandable">
+          <li>
+            <a class="collapsible-header"
+              >Product<i class="material-icons">arrow_drop_down</i></a
+            >
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Lite</a></li>
+                <li><a href="#!">Pro</a></li>
+                <li><a href="#!">Premium</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="divider"></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-expandable">
+          <li>
+            <a class="collapsible-header"
+              >For creators<i class="material-icons">arrow_drop_down</i></a
+            >
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Podcasters</a></li>
+                <li><a href="#!">Video Creators</a></li>
+                <li><a href="#!">Musicians</a></li>
+                <li><a href="#!">Visual Artists</a></li>
+                <li><a href="#!">Communities</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="divider"></li>
       <li><a href="#">Pricing</a></li>
-      <li><a href="#">Resources</a></li>
+      <li class="divider"></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-expandable">
+          <li>
+            <a class="collapsible-header"
+              >Resources<i class="material-icons">arrow_drop_down</i></a
+            >
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Blog</a></li>
+                <li><a href="#!">Creator Community</a></li>
+                <li><a href="#!">Events</a></li>
+                <li><a href="#!">Patreons U</a></li>
+                <li><a href="#!">App Directory</a></li>
+                <li><a href="#!">Help Center & FAQ</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="divider"></li>
       <li><a href="#">Starter Kits</a></li>
     </ul>
-
 
     <!-- Landing section -->
 
@@ -64,11 +151,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       // Sidenav
-      const sideNav = document.querySelector('.sidenav');
+      const sideNav = document.querySelector(".sidenav");
       M.Sidenav.init(sideNav, {
-        edge: 'right',
+        edge: "right",
         draggable: true,
-        preventScrolling: true
+        preventScrolling: true,
+      });
+
+      // Collapsible expandable from sidenav
+      const collapsible = document.querySelectorAll(".collapsible-expandable");
+      M.Collapsible.init(collapsible, {
+        accordion: false,
+      });
+
+      // Dropdown from navbar
+      var dropdown = document.querySelectorAll('.dropdown-trigger');
+      M.Dropdown.init(dropdown, {
+        coverTrigger: false,
+        hover: true
       });
 
       // Tooltips

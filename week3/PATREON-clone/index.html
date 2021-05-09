@@ -28,77 +28,83 @@
     <!-- Navigation Bar -->
     <div class="navbar-fixed">
       <nav class="nav-wrapper white">
-        <a href="#!" class="brand-logo left"
-          ><img src="assets/patreon_logo_FieryCoral.svg" alt="logo" />
-        </a>
-        <a href="#" data-target="mobile-nav" class="sidenav-trigger right">
-          <i class="material-icons grey-text text-darken-2">menu</i>
-        </a>
-        <ul class="left hide-on-med-and-down">
-          <li>
-            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
-              >Product<i class="material-icons right">arrow_drop_down</i></a
-            >
-          </li>
-          <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">Lite</a></li>
-            <li><a href="#!">Pro</a></li>
-            <li><a href="#!">Premium</a></li>
-          </ul>
-          <li>
-            <a class="dropdown-trigger" href="#!" data-target="dropdown2"
-              >For creators<i class="material-icons right"
-                >arrow_drop_down</i
-              ></a
-            >
-          </li>
-          <ul id="dropdown2" class="dropdown-content">
-            <li><a href="#!">Podcasters</a></li>
-            <li><a href="#!">Video Creators</a></li>
-            <li><a href="#!">Musicians</a></li>
-            <li><a href="#!">Visual Artists</a></li>
-            <li><a href="#!">Communities</a></li>
-          </ul>
-          <li><a href="#"></a>Pricing</li>
-          <li>
-            <a class="dropdown-trigger" href="#!" data-target="dropdown3"
-              >Resources<i class="material-icons right">arrow_drop_down</i></a
-            >
-          </li>
-          <ul id="dropdown3" class="dropdown-content">
-            <li><a href="#!">Blog</a></li>
-            <li><a href="#!">Creator Community</a></li>
-            <li><a href="#!">Events</a></li>
-            <li><a href="#!">Patreon U</a></li>
-            <li><a href="#!">App Directory</a></li>
-            <li><a href="#!">Help Center & FAQ</a></li>
-          </ul>
-          <li><a href="#"></a>Starter Kits</li>
-        </ul>
-        <ul class="right">
-          <li>
-            <form>
-              <div class="input-field">
-                <input
-                  type="search"
-                  class="grey-text text-darken-2 autocomplete"
-                  id="autocomplete-input"
-                  placeholder="Find a creator"
-                  required
-                />
-                <label class="label-icon" for="search"
-                  ><i class="material-icons grey-text text-darken-2"
-                    >search</i
-                  ></label
+        <div class="row">
+          <div class="col l6">
+            <a href="#!" class="brand-logo left"
+              ><img src="assets/patreon_logo_FieryCoral.svg" alt="logo" />
+            </a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger right">
+              <i class="material-icons grey-text text-darken-2">menu</i>
+            </a>
+            <ul class="hide-on-med-and-down">
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                  >Product<i class="material-icons right">arrow_drop_down</i></a
                 >
-                <i class="material-icons">close</i>
-              </div>
-            </form>
-          </li>
-          <li><a href="#"></a>Log In</li>
-          <li><a class="btn-large">Create on Patreon</a></li>  
-        </ul>
-
+              </li>
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Lite</a></li>
+                <li><a href="#!">Pro</a></li>
+                <li><a href="#!">Premium</a></li>
+              </ul>
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown2"
+                  >For creators<i class="material-icons right"
+                    >arrow_drop_down</i
+                  ></a
+                >
+              </li>
+              <ul id="dropdown2" class="dropdown-content">
+                <li><a href="#!">Podcasters</a></li>
+                <li><a href="#!">Video Creators</a></li>
+                <li><a href="#!">Musicians</a></li>
+                <li><a href="#!">Visual Artists</a></li>
+                <li><a href="#!">Communities</a></li>
+              </ul>
+              <li><a href="#"></a>Pricing</li>
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown3"
+                  >Resources<i class="material-icons right"
+                    >arrow_drop_down</i
+                  ></a
+                >
+              </li>
+              <ul id="dropdown3" class="dropdown-content">
+                <li><a href="#!">Blog</a></li>
+                <li><a href="#!">Creator Community</a></li>
+                <li><a href="#!">Events</a></li>
+                <li><a href="#!">Patreon U</a></li>
+                <li><a href="#!">App Directory</a></li>
+                <li><a href="#!">Help Center & FAQ</a></li>
+              </ul>
+              <li><a href="#"></a>Starter Kits</li>
+            </ul>
+          </div>
+          <div class="col l6">
+            <ul class="right">
+            <li>
+              <form>
+                <div class="input-field">
+                  <input
+                    type="search"
+                    class="grey-text text-darken-2 autocomplete"
+                    id="autocomplete-input"
+                    placeholder="Find a creator"
+                    required
+                  />
+                  <label class="label-icon" for="search"
+                    ><i class="material-icons grey-text text-darken-2"
+                      >search</i
+                    ></label
+                  >
+                  <i class="material-icons">close</i>
+              </form>
+            </li>
+            <li><a href="#"></a>Log In</li>
+            <li><a class="btn-large">Create on Patreon</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
     <ul class="sidenav" id="mobile-nav">
@@ -168,6 +174,18 @@
     </ul>
 
     <!-- Landing section -->
+    <section class="container section" id="landing">
+      <div class="row">
+        <div class="col s12 m5" id="landing-text">
+          <h1>Change the way art is valued</h1>
+          <p>Let your most passionate fans support your creative work via monthly membership.</p>
+          <a class="btn-large">Get started</a>
+        </div>
+        <div class="col s12 m5 offset-m1" id="landing-gif">
+          <img class="responsive-img" src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/coe-optimize.gif" alt="animated-preview">
+          <a class="btn-floating btn-large"><i class="material-icons">play_arrow</i></a>
+      </div>
+    </section>
 
     <!-- Search -->
 

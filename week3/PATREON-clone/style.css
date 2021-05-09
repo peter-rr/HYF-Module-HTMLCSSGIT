@@ -52,6 +52,9 @@ ul .dropdown-content > li a {
   border-color: #ff424d;
   background-color: #fff;
 }
+/* section .container #landing {
+  background-color: #141518;
+} */
 #landing-text h1 {
   color: #ff424d;
   font-weight: 700;
@@ -93,6 +96,24 @@ ul .dropdown-content > li a {
 #landing-gif:hover {
   transform: scale(1.05);
 }
+#search-creators {
+  background-color: #ffffff;
+}
+#search-creators h3 {
+  font-weight: 700;
+  text-align: center;
+}
+#search-creators .btn-large {
+  text-transform: none;
+  border-radius: 30px;
+  background-color: #ff424d;
+  border: 1px solid #ff424d;
+  box-shadow: none;
+}
+#search-creators form .input-field {
+  background-color: rgb(245, 244, 242);
+  border-radius: 40px;
+
 
 
 

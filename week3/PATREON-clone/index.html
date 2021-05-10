@@ -186,7 +186,7 @@
       </div>
     </section>
 
-    <!-- Search -->
+    <!-- Search creators -->
     <section class="container section" id="search-creators">
       <div class="row">
         <div class="col s12">
@@ -194,23 +194,23 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12 m8">
-          <form>
-            <div class="input-field">
-              <i class="material-icons grey-text text-darken-2 prefix"
-                  >search</i
-                >
-              <input
-                type="text"
-                class="grey-text text-darken-2 autocomplete"
-                id="autocomplete-input"
-                placeholder="Find a creator you love"
-              />
+          <form class="col s12 m12">
+            <div class="row">
+              <div class="input-field col s12 m10">
+                <i class="material-icons grey-text text-darken-2 prefix">search</i>
+                <input
+                  type="text"
+                  class="grey-text text-darken-2 autocomplete"
+                  id="autocomplete-input"
+                  placeholder="Find a creator you love"
+                  required
+                />
+              </div>
+            <div class="col s12 m2">
+              <a class="btn-large">Search</a>
+            </div>
+            </div>
           </form>
-        </div>
-        <div class="col s12 m2">
-          <a class="btn-large">Search</a>
-        </div>
       </div>
       
     </section>
@@ -231,20 +231,33 @@
       });
 
       // Collapsible expandable from sidenav
-      const collapsible = document.querySelectorAll(".collapsible-expandable");
+      const collapsible = document.querySelectorAll('.collapsible-expandable');
       M.Collapsible.init(collapsible, {
         accordion: false,
       });
 
       // Dropdown from navbar
-      var dropdown = document.querySelectorAll(".dropdown-trigger");
+      const dropdown = document.querySelectorAll('.dropdown-trigger');
       M.Dropdown.init(dropdown, {
         coverTrigger: false,
         hover: true,
       });
 
+      // Autocomplete
+      const ac = document.querySelectorAll('.autocomplete');
+      M.Autocomplete.init(ac, {
+        data: {
+          "Leonardo da Vinci": null,
+          "Michelangelo": null,
+          "Ada Lovelace": null,
+          "Nicola Tesla": null,
+          "Caravaggio": null,
+          "Aristoteles": null
+        }
+      });
+
       // Tooltips
-      const tt = document.querySelectorAll(".tooltipped");
+      const tt = document.querySelectorAll('.tooltipped');
       M.Tooltip.init(tt, {});
     </script>
   </body>

@@ -97,7 +97,7 @@ ul .dropdown-content > li a {
   transform: scale(1.05);
 }
 #search-creators {
-  background-color: #ffffff;
+  background-color: #ffffff !important; 
 }
 #search-creators h3 {
   font-weight: 700;
@@ -113,6 +113,25 @@ ul .dropdown-content > li a {
 #search-creators form .input-field {
   background-color: rgb(245, 244, 242);
   border-radius: 40px;
+}
+#search-creators input[type=text]{
+  border-bottom: none;
+  outline: none;
+}
+#search-creators input[type=text]:focus{
+  border-bottom: none;
+  box-shadow: none;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #141518;
+}
+.autocomplete-content li .highlight {
+  color: black;
+  font-weight: bold;
+}
+
+
+
 
 
 

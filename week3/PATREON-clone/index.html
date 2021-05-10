@@ -39,7 +39,7 @@
             <ul class="hide-on-med-and-down">
               <li>
                 <a class="dropdown-trigger" href="#!" data-target="dropdown1"
-                  >Product<i class="material-icons right">arrow_drop_down</i></a
+                  >Product<i class="material-icons right">expand_more</i></a
                 >
               </li>
               <ul id="dropdown1" class="dropdown-content">
@@ -50,7 +50,7 @@
               <li>
                 <a class="dropdown-trigger" href="#!" data-target="dropdown2"
                   >For creators<i class="material-icons right"
-                    >arrow_drop_down</i
+                    >expand_more</i
                   ></a
                 >
               </li>
@@ -65,7 +65,7 @@
               <li>
                 <a class="dropdown-trigger" href="#!" data-target="dropdown3"
                   >Resources<i class="material-icons right"
-                    >arrow_drop_down</i
+                    >expand_more</i
                   ></a
                 >
               </li>
@@ -107,13 +107,13 @@
       </nav>
     </div>
     <ul class="sidenav" id="mobile-nav">
-      <li><a class="sidenav-close" href="#!">X</a></li>
+      <li><a class="sidenav-close" href="#!"><i class="material-icons right small">close</i></a></li>
       <li class="divider"></li>
       <li class="no-padding">
         <ul class="collapsible collapsible-expandable">
           <li>
             <a class="collapsible-header"
-              >Product<i class="material-icons right">arrow_drop_down</i></a
+              >Product<i class="material-icons right">expand_more</i></a
             >
             <div class="collapsible-body">
               <ul>
@@ -131,7 +131,7 @@
           <li>
             <a class="collapsible-header"
               >For creators<i class="material-icons right"
-                >arrow_drop_down</i
+                >expand_more</i
               ></a
             >
             <div class="collapsible-body">
@@ -153,7 +153,7 @@
         <ul class="collapsible collapsible-expandable">
           <li>
             <a class="collapsible-header"
-              >Resources<i class="material-icons right">arrow_drop_down</i></a
+              >Resources<i class="material-icons right">expand_more</i></a
             >
             <div class="collapsible-body">
               <ul>
@@ -173,49 +173,124 @@
     </ul>
 
     <!-- Landing section -->
-    <section class="container section" id="landing">
-      <div class="row">
-        <div class="col s12 m5" id="landing-text">
-          <h1>Change the way art is valued</h1>
-          <p>Let your most passionate fans support your creative work via monthly membership.</p>
-          <a class="btn-large">Get started</a>
-        </div>
-        <div class="col s12 m5 offset-m1" id="landing-gif">
-          <img class="responsive-img" src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/coe-optimize.gif" alt="animated-preview">
-          <a class="btn-floating btn-large"><i class="material-icons">play_arrow</i></a>
+    <section class="section" id="landing">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5" id="landing-text">
+            <h1>Change the way art is valued</h1>
+            <p>Let your most passionate fans support your creative work via monthly membership.</p>
+            <a class="btn-large">Get started</a>
+          </div>
+          <div class="col s12 m6 offset-m1" id="landing-gif">
+            <img class="responsive-img" src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/coe-optimize.gif" alt="animated-preview">
+            <a class="btn-floating btn-large"><i class="material-icons">play_arrow</i></a>
+        </div>  
       </div>
     </section>
 
     <!-- Search creators -->
-    <section class="container section" id="search-creators">
-      <div class="row">
-        <div class="col s12">
-          <h3>Search the 200,000+ creators on Patreon</h3>
+    <section class="section" id="search-creators">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>Search the 200,000+ creators on Patreon</h3>
+          </div>
+        </div>
+        <div class="row">
+            <form class="col s12 m12">
+              <div class="row">
+                <div class="input-field col s12 m10">
+                  <i class="material-icons grey-text text-darken-2 prefix">search</i>
+                  <input
+                    type="text"
+                    class="grey-text text-darken-2 autocomplete"
+                    id="autocomplete-input"
+                    placeholder="Find a creator you love"
+                    required
+                  />
+                </div>
+              <div class="col s12 m2">
+                <a class="btn-large">Search</a>
+              </div>
+              </div>
+            </form>
         </div>
       </div>
-      <div class="row">
-          <form class="col s12 m12">
-            <div class="row">
-              <div class="input-field col s12 m10">
-                <i class="material-icons grey-text text-darken-2 prefix">search</i>
-                <input
-                  type="text"
-                  class="grey-text text-darken-2 autocomplete"
-                  id="autocomplete-input"
-                  placeholder="Find a creator you love"
-                  required
-                />
-              </div>
-            <div class="col s12 m2">
-              <a class="btn-large">Search</a>
-            </div>
-            </div>
-          </form>
-      </div>
-      
     </section>
 
     <!-- "What's Patreon?" section -->
+    <section class="section" id="what-is-patreon">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>What's Patreon?</h3>
+            <p>
+              On Patreon, you can let your fans become active participants in the work they love by offering them a monthly membership. You give them access to exclusive content, community, and insight into your creative process. In exchange, you get the freedom to do your best work, and the stability you need to build an independent creative career.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photos -->
+    <section class="section" id="photos">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <h4>Develop a recurring income stream</h4>
+            <p>
+              Stop rolling the dice of ad revenue and per-stream payouts. Get recurring income through monthly payments from your patrons.
+            </p>
+          </div>
+          <div class="col s12 m6">
+            <img src="assets/media/mikki_kendall.png" alt="mikki" class="responsive-img">
+            <a href="https://www.patreon.com/karnythia">
+              <h6>Mikki Kendall</h6>
+              <p>Writer</p>
+            </a>
+            <p>
+              "The reliable monthly income has made it possible for me to spend less time chasing checks and more time creating."
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6 push-m6">
+            <h4>Take back creative control</h4>
+            <p>
+              Create what you want and what your audience loves. You don’t have to conform to popular taste or the constraints of ad-based monetization models.
+            </p>
+          </div>
+          <div class="col s12 m6 pull-m6">
+            <img src="assets/media/baratunde_thurston.png" alt="baratunde" class="responsive-img">
+            <a href="https://www.patreon.com/baratunde">
+              <p>Baratunde Thurston</p>
+              <p>Writer, comedian, commentator</p>
+            </a>
+            <p>
+              "Twenty years into my career, I realize I’ve been scattering my creativity and energy, chasing the approval of algorithms or network executives."
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <h4>Build a direct, meaningful connection with your audience</h4>
+            <p>
+              No ads, no trolls, no algorithms. Enjoy direct access and deeper conversations with the people who matter the most.
+            </p>
+          </div>
+          <div class="col s12 m6">
+            <img src="assets/media/heather_mcdonald.png" alt="heather" class="responsive-img">
+            <a href="https://www.patreon.com/juicyscoop">
+              <p>Heather McDonald</p>
+              <p>Juicy Scoop Podcast</p>
+            </a>
+            <p>
+              "With Patreon, it’s not about likes and views, you can really connect with your fans, ignore the haters and focus on the positive. I’d rather have 300 patrons than 3 million Instagram followers."
+            </p>
+          </div>
+        </div>  
+      </div>
+    </section>
 
     <!-- Footer -->
 

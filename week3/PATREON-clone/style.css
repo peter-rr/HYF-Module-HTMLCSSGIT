@@ -1,8 +1,10 @@
+:root{
+  --redfont: #ff424d;
+}
 body {
-  background-color: #141518;
+  background-color: white;
   color: #141518;
 }
-
 .nav-wrapper .row .col .brand-logo {
   color: #141518;
   /* margin-right: 20px;
@@ -43,7 +45,7 @@ ul .dropdown-content > li a {
 .nav-wrapper .btn-large {
   text-transform: none;
   border-radius: 30px;
-  background-color: #ff424d;
+  background-color: var(--redfont);
   border: 2px solid transparent;
   box-shadow: none;
 }
@@ -52,9 +54,9 @@ ul .dropdown-content > li a {
   border-color: #ff424d;
   background-color: #fff;
 }
-/* section .container #landing {
+#landing {
   background-color: #141518;
-} */
+}
 #landing-text h1 {
   color: #ff424d;
   font-weight: 700;
@@ -112,7 +114,7 @@ ul .dropdown-content > li a {
 }
 #search-creators form .input-field {
   background-color: rgb(245, 244, 242);
-  border-radius: 40px;
+  border-radius: 30px;
 }
 #search-creators input[type=text]{
   border-bottom: none;
@@ -129,6 +131,37 @@ ul .dropdown-content > li a {
   color: black;
   font-weight: bold;
 }
+#what-is-patreon {
+  background-color: #ffffff !important; 
+}
+#what-is-patreon h3 {
+  color: #332D22;
+  font-weight: 700;
+  text-align: center;
+}
+#what-is-patreon p {
+  color: #241E12;
+  font-size: 1.5rem;
+  font-weight: 250;
+  text-align: center;
+}
+#photos {
+  background-color: #ffffff !important; 
+}
+#photos h4 {
+  color: #ff424d;
+  font-weight: 700;
+  text-align: left;
+}
+#photos p {
+  color: #241E12;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+
+
 
 
 

@@ -1,12 +1,13 @@
 :root{
-  --redfont: #ff424d;
+  --fiery_coral: #FF424D;
+  --brand_black: #141518;
 }
 body {
-  background-color: white;
-  color: #141518;
+  background-color: #ffffff;
+  color: var(--brand_black);
 }
 .nav-wrapper .row .col .brand-logo {
-  color: #141518;
+  color: var(--brand_black);
   /* margin-right: 20px;
   display: inline-block; */
 }
@@ -16,22 +17,22 @@ body {
 }
 
 .nav-wrapper ul li {
-  color: #141518;
+  color: var(--brand_black);
   /* padding-left: 6px; */
   padding-right: 18px;
 }
 .nav-wrapper ul li .dropdown-trigger {
-  color: #141518;
+  color: var(--brand_black);
   /* padding-left: 6px; */
   padding-right: 18px;
 }
 .nav-wrapper > ul li > .dropdown-trigger {
-  color: #141518;
+  color: var(--brand_black);
   padding-left: 6px;
   padding-right: 18px;
 }
 ul .dropdown-content > li a {
-  color: #141518;
+  color: var(--brand_black);
 }
 /* .nav-wrapper form .input-field input {
   width: 237px;
@@ -45,20 +46,23 @@ ul .dropdown-content > li a {
 .nav-wrapper .btn-large {
   text-transform: none;
   border-radius: 30px;
-  background-color: var(--redfont);
+  background-color: var(--fiery_coral);
   border: 2px solid transparent;
   box-shadow: none;
 }
 .nav-wrapper .btn-large:hover {
-  color: #ff424d;
-  border-color: #ff424d;
-  background-color: #fff;
+  color: var(--fiery_coral);
+  border-color: var(--fiery_coral);
+  background-color: #ffffff;
+}
+.sidenav-close i {
+  font-size: xxx-large;
 }
 #landing {
-  background-color: #141518;
+  background-color: var(--brand_black);
 }
 #landing-text h1 {
-  color: #ff424d;
+  color: var(--fiery_coral);
   font-weight: 700;
 }
 #landing-text p {
@@ -69,8 +73,8 @@ ul .dropdown-content > li a {
 #landing-text .btn-large {
   text-transform: none;
   border-radius: 30px;
-  background-color: #ff424d;
-  border: 1px solid #ff424d;
+  background-color: var(--fiery_coral);
+  border: 1px solid var(--fiery_coral);
 }
 #landing-text .btn-large:hover {
   background-color: rgb(255, 53, 65);
@@ -86,8 +90,8 @@ ul .dropdown-content > li a {
   position: relative;
   transition: transform 0.3s ease-in-out 0s;
 }
-#landing-gif .btn-large {
-  background-color: rgb(255, 66, 77);
+#landing-gif .btn-floating {
+  background-color: var(--fiery_coral);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -98,18 +102,16 @@ ul .dropdown-content > li a {
 #landing-gif:hover {
   transform: scale(1.05);
 }
-#search-creators {
-  background-color: #ffffff !important; 
-}
 #search-creators h3 {
+  color: var(--brand_black);
   font-weight: 700;
   text-align: center;
 }
 #search-creators .btn-large {
   text-transform: none;
   border-radius: 30px;
-  background-color: #ff424d;
-  border: 1px solid #ff424d;
+  background-color: var(--fiery_coral);
+  border: 1px solid var(--fiery_coral);
   box-shadow: none;
 }
 #search-creators form .input-field {
@@ -125,42 +127,60 @@ ul .dropdown-content > li a {
   box-shadow: none;
 }
 .dropdown-content li > a, .dropdown-content li > span {
-  color: #141518;
+  color: var(--brand_black);
 }
 .autocomplete-content li .highlight {
   color: black;
   font-weight: bold;
 }
-#what-is-patreon {
-  background-color: #ffffff !important; 
-}
 #what-is-patreon h3 {
-  color: #332D22;
+  color: var(--brand_black);
   font-weight: 700;
   text-align: center;
 }
 #what-is-patreon p {
-  color: #241E12;
+  color: var(--brand_black);
   font-size: 1.5rem;
   font-weight: 250;
   text-align: center;
 }
-#photos {
-  background-color: #ffffff !important; 
-}
 #photos h4 {
-  color: #ff424d;
+  color: var(--fiery_coral);
   font-weight: 700;
   text-align: left;
 }
 #photos p {
-  color: #241E12;
+  color: var(--brand_black);
   font-size: 1.1rem;
   font-weight: 300;
   text-align: left;
 }
-
-
+#photos a {
+  text-decoration: none;
+}
+#photos a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--fiery_coral);
+  text-decoration-thickness: 2px;
+}
+#photos a > h6 {
+  color: var(--brand_black);
+  font-weight: bold;
+}
+#photos a > p {
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+#photos i {
+  font-weight: 100;
+  color: var(--fiery_coral);
+  /* font-size: xxx-large; */
+}
+#photos .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 
 
 

@@ -232,29 +232,58 @@ ul .dropdown-content > li a {
   text-decoration-color: currentColor;
   cursor: pointer;
 }
-.page-footer .flex-container{
+.page-footer .flex-container-1 {
   display: flex;
   flex-wrap: wrap;
 }
+.page-footer .flex-container-1 .flex-item {
+  padding: 0rem 0.5rem 1rem 0.5rem;
+}
+.page-footer  .flex-container-1 .flex-item:first-child {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+.page-footer .flex-container-1 .flex-item:nth-child(2),
+.page-footer .flex-container-1 .flex-item:nth-child(3),
+.page-footer .flex-container-1 .flex-item:nth-child(4),
+.page-footer .flex-container-1 .flex-item:nth-child(5) {
+  flex: 0 0 16.6667%;
+  max-width: 16.6667%;
+  order: 2;
+}
+.page-footer .flex-container-1 .flex-item:last-child {
+  flex: 0 0 66.6667%;
+  max-width: 66.6667%;
+  order: 3;
+}
+.page-footer .flex-container-social {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+.page-footer .flex-container-social > li {
+  margin: 6px;
+}
 #footer .footer-copyright {
+  padding-top: 0;
   padding-bottom: 24px;
 }
-.footer-copyright .flex-container {
+.footer-copyright .flex-container-2 {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 0;
 }
-.footer-copyright .flex-container {
+.footer-copyright .flex-container-2 {
   color: #ffffff;
   font-size: 0.9rem;
   font-weight: 200;
 }
-.footer-copyright .flex-container li:first-child p,
-.footer-copyright .flex-container li:nth-child(2) p {
+.footer-copyright .flex-container-2 li:first-child p,
+.footer-copyright .flex-container-2 li:nth-child(2) p {
   margin-bottom: 0;
   margin-top: 0;
 }
-.footer-copyright .flex-container li:nth-child(2) {
+.footer-copyright .flex-container-2 li:nth-child(2) {
   padding-left: 24px;
 }
 .footer-copyright a {
@@ -275,6 +304,28 @@ ul .dropdown-content > li a {
 }
 .footer-copyright address a:hover {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .page-footer .flex-container-1 .flex-item:nth-child(2),
+  .page-footer .flex-container-1 .flex-item:nth-child(3),
+  .page-footer .flex-container-1 .flex-item:nth-child(4),
+  .page-footer .flex-container-1 .flex-item:nth-child(5) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    order: 3;
+  }
+  .page-footer .flex-container-1 .flex-item:last-child {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+    order: 2;
+  }
+  .page-footer .flex-container-social {
+    justify-content: right;
+  }
+  .page-footer {
+    padding-top: 24px;
+  }
 }
 
 /* @font-face {

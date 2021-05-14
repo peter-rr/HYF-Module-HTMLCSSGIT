@@ -102,10 +102,25 @@ ul .dropdown-content > li a {
 #landing-gif:hover {
   transform: scale(1.05);
 }
+#search-creators .container {
+  padding: 6rem 3rem;
+}
+#search-creators .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#search-creators .flex-item:first-child {
+  flex-grow: 2;
+}
+#search-creators .flex-item:nth-child(2) {
+  padding-left: 1.25rem;
+}
 #search-creators h3 {
   color: var(--brand_black);
   font-weight: 700;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 #search-creators .btn-large {
   text-transform: none;
@@ -113,21 +128,36 @@ ul .dropdown-content > li a {
   background-color: var(--fiery_coral);
   border: 1px solid var(--fiery_coral);
   box-shadow: none;
+  height: 48px;
+  line-height: 3;
 }
 #search-creators form .input-field {
   background-color: rgb(245, 244, 242);
   border-radius: 30px;
+  margin: 0;
+}
+#search-creators form .input-field i {
+  font-size: 20px;
+  line-height: 1.6;
+}
+#search-creators .input-field #autocomplete-input {
+  margin-bottom: 0;
+  height: 50px;
 }
 #search-creators input[type="text"] {
   border-bottom: none;
   outline: none;
+  font-size: 18px;
 }
 #search-creators input[type="text"]:focus {
   border-bottom: none;
   box-shadow: none;
 }
-.dropdown-content li > a,
-.dropdown-content li > span {
+#search-creators input[type="text"]::placeholder {
+  color: rgb(112, 108, 100);
+}
+.autocomplete-content li > a,
+.autocomplete-content li > span {
   color: var(--brand_black);
 }
 .autocomplete-content li .highlight {
@@ -325,6 +355,22 @@ ul .dropdown-content > li a {
   }
   .page-footer {
     padding-top: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #search-creators .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #search-creators .flex-item:nth-child(2) {
+    flex-grow: 2;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 0.5rem;
+  }
+  #search-creators .btn-large {
+    width: 100%;
   }
 }
 

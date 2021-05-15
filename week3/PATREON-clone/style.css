@@ -78,8 +78,15 @@ body {
   border-color: var(--fiery_coral);
   background-color: #ffffff;
 }
-.sidenav-close i {
-  font-size: xxx-large;
+.sidenav a.sidenav-close i {
+  font-size: 38px;
+  font-weight: 100;
+}
+.sidenav a.sidenav-close {
+  padding: 0;
+}
+.sidenav a.collapsible-header {
+  padding-right: 0;
 }
 .nav-wrapper {
   display: flex;

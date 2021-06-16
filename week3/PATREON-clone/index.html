@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>PATREON-clone</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper white">
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger right">
+            <i class="material-icons grey-text text-darken-2">menu</i>
+          </a>
+          <div class="flex-container-1">
+            <div class="flex-item">
+              <a href="#" class="brand-logo">
+                <img src="assets/Digital-Patreon-Logo_FieryCoral.png" alt="logo" />
+              </a>
+            </div>
+            <div class="flex-item">
+              <ul class="hide-on-med-and-down">
+                <div class="flex-container-topics">
+                  <li>
+                    <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                      >Product<i class="material-icons right">expand_more</i></a
+                    >
+                  </li>
+                  <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#!">Lite</a></li>
+                    <li><a href="#!">Pro</a></li>
+                    <li><a href="#!">Premium</a></li>
+                  </ul>
+                  <li>
+                    <a class="dropdown-trigger" href="#!" data-target="dropdown2"
+                      >For creators<i class="material-icons right"
+                        >expand_more</i
+                      ></a
+                    >
+                  </li>
+                  <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="#!">Podcasters</a></li>
+                    <li><a href="#!">Video Creators</a></li>
+                    <li><a href="#!">Musicians</a></li>
+                    <li><a href="#!">Visual Artists</a></li>
+                    <li><a href="#!">Communities</a></li>
+                  </ul>
+                  <li><a href="#!"></a>Pricing</li>
+                  <li>
+                    <a class="dropdown-trigger" href="#!" data-target="dropdown3"
+                      >Resources<i class="material-icons right"
+                        >expand_more</i
+                      ></a
+                    >
+                  </li>
+                  <ul id="dropdown3" class="dropdown-content">
+                    <li><a href="#!">Blog</a></li>
+                    <li><a href="#!">Creator Community</a></li>
+                    <li><a href="#!">Events</a></li>
+                    <li><a href="#!">Patreon U</a></li>
+                    <li><a href="#!">App Directory</a></li>
+                    <li><a href="#!">Help Center & FAQ</a></li>
+                  </ul>
+                  <li><a href="#!"></a>Starter Kits</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-container-2">
+              <div class="flex-item">
+                <li>
+                  <form>
+                    <div class="input-field">
+                      <i class="material-icons grey-text text-darken-2 prefix center">search</i>
+                      <input
+                        type="text"
+                        class="grey-text text-darken-2 autocomplete"
+                        id="autocomplete-input"
+                        placeholder="Find a creator"
+                        required
+                      />
+                    </div>
+                  </form>
+                </li>  
+              </div>
+              <div class="flex-item">
+                <li><a href="#!"></a>Log In</li>
+              </div>
+              <div class="flex-item">
+                <li><a class="btn-large">Create on Patreon</a></li>
+              </div>
+          </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a class="sidenav-close" href="#!"><i class="material-icons right medium">close</i></a></li>
+      <li class="divider"></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-expandable">
+          <li>
+            <a class="collapsible-header"
+              >Product<i class="material-icons right">expand_more</i></a
+            >
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Lite</a></li>
+                <li><a href="#!">Pro</a></li>
+                <li><a href="#!">Premium</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="divider"></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-expandable">
+          <li>
+            <a class="collapsible-header"
+              >For creators<i class="material-icons right"
+                >expand_more</i
+              ></a
+            >
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Podcasters</a></li>
+                <li><a href="#!">Video Creators</a></li>
+                <li><a href="#!">Musicians</a></li>
+                <li><a href="#!">Visual Artists</a></li>
+                <li><a href="#!">Communities</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="divider"></li>
+      <li><a href="#" style="padding-left: 16px;">Pricing</a></li>
+      <li class="divider"></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-expandable">
+          <li>
+            <a class="collapsible-header"
+              >Resources<i class="material-icons right">expand_more</i></a
+            >
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Blog</a></li>
+                <li><a href="#!">Creator Community</a></li>
+                <li><a href="#!">Events</a></li>
+                <li><a href="#!">Patreons U</a></li>
+                <li><a href="#!">App Directory</a></li>
+                <li><a href="#!">Help Center & FAQ</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="divider"></li>
+      <li><a href="#"style="padding-left: 16px;">Starter Kits</a></li>
+    </ul>
+
+    <!-- Landing section -->
+    <section class="section" id="landing">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5" id="landing-text">
+            <h1>Change the way art is valued</h1>
+            <p>Let your most passionate fans support your creative work via monthly membership.</p>
+            <a class="btn-large">Get started</a>
+          </div>
+          <div class="col s12 m6 offset-m1" id="landing-gif">
+            <img class="responsive-img" src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/coe-optimize.gif" alt="animated-preview">
+            <a class="btn-floating btn-large"><i class="material-icons">play_arrow</i></a>
+        </div>  
+      </div>
+    </section>
+
+    <!-- Search creators -->
+    <section class="section" id="search-creators">
+      <div class="container">
+            <h3>Search the 200,000+ creators on Patreon</h3>
+            <form>
+              <div class="flex-container">
+                <div class="flex-item">
+                  <div class="input-field">
+                    <i class="material-icons grey-text text-darken-2 prefix right">search</i>
+                    <input
+                      type="text"
+                      class="grey-text text-darken-2 autocomplete"
+                      id="autocomplete-input"
+                      placeholder="Find a creator you love"
+                      required
+                    />
+                  </div>  
+                </div>
+                <div class="flex-item">
+                    <a class="btn-large">Search</a>
+                </div>
+              </div>
+            </form>
+      </div>
+    </section>
+
+    <!-- "What's Patreon?" section -->
+    <section class="section" id="what-is-patreon">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>What's Patreon?</h3>
+            <p>
+              On Patreon, you can let your fans become active participants in the work they love by offering them a monthly membership. You give them access to exclusive content, community, and insight into your creative process. In exchange, you get the freedom to do your best work, and the stability you need to build an independent creative career.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photos -->
+    <section class="section" id="photos">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <h4>Develop a recurring income stream</h4>
+            <p>
+              Stop rolling the dice of ad revenue and per-stream payouts. Get recurring income through monthly payments from your patrons.
+            </p>
+          </div>
+          <div class="col s12 m6">
+            <img src="assets/media/mikki_kendall.png" alt="mikki" class="responsive-img">
+            <div class="flex-container">
+              <div class="flex-item">
+                <a href="https://www.patreon.com/karnythia">
+                  <h6>Mikki Kendall</h6>
+                  <p>Writer</p>
+                </a>  
+              </div>
+              <div class="flex-item">
+                <i class="material-icons medium">keyboard_arrow_right</i>
+              </div>
+            </div>
+            <p>
+              "The reliable monthly income has made it possible for me to spend less time chasing checks and more time creating."
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6 push-m6">
+            <h4>Take back creative control</h4>
+            <p>
+              Create what you want and what your audience loves. You don’t have to conform to popular taste or the constraints of ad-based monetization models.
+            </p>
+          </div>
+          <div class="col s12 m6 pull-m6">
+            <img src="assets/media/baratunde_thurston.png" alt="baratunde" class="responsive-img">
+            <div class="flex-container">
+              <div class="flex-item">
+                <a href="https://www.patreon.com/baratunde">
+                  <h6>Baratunde Thurston</h6>
+                  <p>Writer, comedian, commentator</p>
+                </a>  
+              </div>
+              <div class="flex-item">
+                <i class="material-icons medium">keyboard_arrow_right</i>  
+              </div>
+            </div>
+            <p>
+              "Twenty years into my career, I realize I’ve been scattering my creativity and energy, chasing the approval of algorithms or network executives."
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <h4>Build a direct, meaningful connection with your audience</h4>
+            <p>
+              No ads, no trolls, no algorithms. Enjoy direct access and deeper conversations with the people who matter the most.
+            </p>
+          </div>
+          <div class="col s12 m6">
+            <img src="assets/media/heather_mcdonald.png" alt="heather" class="responsive-img">
+            <div class="flex-container">
+              <div class="flex-item">
+                <a href="https://www.patreon.com/juicyscoop">
+                  <h6>Heather McDonald</h6>
+                  <p>Juicy Scoop Podcast</p>
+                </a>  
+              </div>
+              <div class="flex-item">
+                <i class="material-icons medium">keyboard_arrow_right</i>
+              </div>
+            </div>
+            <p>
+              "With Patreon, it’s not about likes and views, you can really connect with your fans, ignore the haters and focus on the positive. I’d rather have 300 patrons than 3 million Instagram followers."
+            </p>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer" id="footer">
+      <div class="container">
+        <div class="flex-container-1">
+          <div class="flex-item">
+            <a href="#!" class="brand-logo">
+              <img src="assets/Digital-Patreon-Logo_White.png" alt="logo" />
+            </a>
+            <a href="#!" class="btn-large"><span>Language: English</span></a>
+            <a href="#!" class="btn-large"><img src="assets/flag-of-spain.png" alt="spain"><span>Spain</span></a>
+            <a href="#!" class="btn-large"><span>Currency: EUR</span></a>  
+          </div>
+          <div class="flex-item">
+            <h6 class="white-text">PRODUCT</h6>
+            <ul>
+              <li><a class="white-text" href="#!">Lite</li></a>
+              <li><a class="white-text" href="#!">Pro</li></a>
+              <li><a class="white-text" href="#!">Premium</li></a>
+              <li><a class="white-text" href="#!">Pricing</li></a>
+            </ul>
+          </div>
+          <div class="flex-item">
+            <h6 class="white-text">FOR CREATORS</h6>
+            <ul>
+              <li><a class="white-text" href="#!">Podcasters</li></a>
+              <li><a class="white-text" href="#!">Video Creators</li></a>
+              <li><a class="white-text" href="#!">Musicians</li></a>
+              <li><a class="white-text" href="#!">Visual Artists</li></a>
+              <li><a class="white-text" href="#!">Writers & Journalists</li></a>
+              <li><a class="white-text" href="#!">Communities</li></a>
+              <li><a class="white-text" href="#!">Gaming Creators</li></a>
+              <li><a class="white-text" href="#!">Nonprofits</li></a>
+              <li><a class="white-text" href="#!">Tutorials and Education</li></a>
+              <li><a class="white-text" href="#!">Local Businesses</li></a>
+              <li><a class="white-text" href="#!">Creators-of-all-kinds</li></a>
+            </ul>
+          </div>
+          <div class="flex-item">
+            <h6 class="white-text">RESOURCES</h6>
+            <ul>
+              <li><a class="white-text" href="#!">Blog</li></a>
+              <li><a class="white-text" href="#!">Patreon U</li></a>
+              <li><a class="white-text" href="#!">Help Center & FAQ</li></a>
+              <li><a class="white-text" href="#!">App Directory</li></a>
+              <li><a class="white-text" href="#!">Developers</li></a>
+            </ul>
+          </div>
+          <div class="flex-item">
+            <h6 class="white-text">COMPANY</h6>
+            <ul>
+              <li><a class="white-text" href="#!">About</li></a>
+              <li><a class="white-text" href="#!">Press</li></a>
+              <li><a class="white-text" href="#!">Careers</li></a>
+              <li><a class="white-text" href="#!">Privacy</li></a>
+              <li><a class="white-text" href="#!">Policy & Terms</li></a>
+              <li><a class="white-text" href="#!">Privacy Preferences</li></a>
+              <li><a class="white-text" href="#!">Accessibility</li></a>
+              <li><a class="white-text" href="#!">Impressum</li></a>
+            </ul>
+          </div>
+          <div class="flex-item">
+            <ul class="flex-container-social">
+              <li><a href="#!" class="btn-floating btn-small grey darken-3">
+                <i class="fab fa-twitter"></i>
+              </a></li>
+              <li><a href="#!" class="btn-floating btn-small grey darken-3">
+                <i class="fab fa-facebook"></i>
+              </a></li>
+              <li><a href="#!" class="btn-floating btn-small grey darken-3">
+                <i class="fab fa-instagram"></i>
+              </a></li>
+              <li><a href="#!" class="btn-floating btn-small grey darken-3">
+                <i class="fab fa-youtube"></i>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <ul class="flex-container-2">
+            <li class="flex-item">
+              <p>&copy; Patreon</p>
+            </li>
+            <li class="flex-item">
+              <p><a href="#!">Sitemaps</a></p>
+            </li>
+          </ul>
+          <address>
+            600 Townsend Street, Suite 500
+            <br>
+            San Francisco, CA 94103
+            <br>
+            USA
+            <br>
+            Phone: <a href="tel:+1-833-972-8766">+1 (833) 972-8766</a>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      // Sidenav
+      const sideNav = document.querySelector(".sidenav");
+      M.Sidenav.init(sideNav, {
+        edge: "right",
+        draggable: true,
+        preventScrolling: true,
+      });
+
+      // Collapsible expandable from sidenav
+      const collapsible = document.querySelectorAll('.collapsible-expandable');
+      M.Collapsible.init(collapsible, {
+        accordion: false,
+      });
+
+      // Dropdown from navbar
+      const dropdown = document.querySelectorAll('.dropdown-trigger');
+      M.Dropdown.init(dropdown, {
+        coverTrigger: false,
+        hover: true,
+      });
+
+      // Autocomplete
+      const ac = document.querySelectorAll('.autocomplete');
+      M.Autocomplete.init(ac, {
+        data: {
+          "Leonardo da Vinci": null,
+          "Michelangelo": null,
+          "Ada Lovelace": null,
+          "Nicola Tesla": null,
+          "Caravaggio": null,
+          "Aristoteles": null
+        }
+      });
+
+      // Tooltips
+      const tt = document.querySelectorAll('.tooltipped');
+      M.Tooltip.init(tt, {});
+    </script>
+  </body>
+</html>

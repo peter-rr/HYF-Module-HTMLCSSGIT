@@ -1,0 +1,6 @@
+--------------------------------------
+>> https://github.com/peter-rr/animals
+--------------------------------------
+
+Repo created by following the instructions explained here:
+>> https://github.com/HackYourFuture/HTML-CSS/blob/master/Week3/MAKEME.md#2-git-exercises
